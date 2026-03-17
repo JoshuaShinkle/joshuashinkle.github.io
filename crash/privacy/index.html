@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="author" content="Joshua Shinkle">
+  <meta name="description" content="Crash Privacy Policy">
+  <meta name="theme-color" content="#2962ff">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400italic,500|Roboto+Mono">
+  <link rel="stylesheet" href="/css/academic.min.2b48dc63649442c3c34ad57d2e5f031b.css">
+
+  <link rel="icon" type="image/jpeg" href="/img/headshot.jpeg">
+  <link rel="canonical" href="/crash/privacy/">
+
+  <meta property="og:site_name" content="Joshua Shinkle">
+  <meta property="og:url" content="/crash/privacy/">
+  <meta property="og:title" content="Crash Privacy Policy">
+  <meta property="og:locale" content="en-us">
+
+  <title>Privacy Policy – Crash</title>
+
+  <style>
+    .privacy-body {
+      padding-top: 5rem;
+      padding-bottom: 3rem;
+    }
+    .privacy-body h1 {
+      margin-bottom: 0.3rem;
+    }
+    .last-updated {
+      color: #999;
+      font-size: 0.85rem;
+      margin-bottom: 2rem;
+      display: block;
+    }
+    .privacy-body h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-top: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .privacy-body p,
+    .privacy-body li {
+      font-size: 0.92rem;
+      color: #444;
+      line-height: 1.65;
+    }
+    .privacy-body ul {
+      padding-left: 1.2rem;
+    }
+    .privacy-note {
+      font-weight: 600;
+      color: #222;
+    }
+  </style>
+
+</head>
+<body id="top">
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+    <a class="navbar-brand" href="/">Joshua Shinkle</a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/#about"><span>Home</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/#experience"><span>Experience</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/crash/"><span>My App</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/files/cv.pdf" target="_blank"><span>CV</span></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="privacy-body">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8">
+
+        <p style="margin-bottom: 1.5rem;"><a href="/crash/">&larr; Back to Crash</a></p>
+
+        <h1>Privacy Policy</h1>
+        <span class="last-updated">Last updated: March 17, 2025</span>
+
+        <h3>1. Who We Are</h3>
+        <p>Crash is an iOS app developed by Joshua Shinkle (<a href="mailto:crash.livesimple@gmail.com">crash.livesimple@gmail.com</a>). It is a personal, non-commercial project. By using Crash, you agree to this Privacy Policy.</p>
+
+        <h3>2. What Data We Collect and Why</h3>
+        <p>We collect only what is necessary to provide the app's core functionality:</p>
+        <ul>
+          <li>Email address — for account creation, authentication, and password reset</li>
+          <li>First and last name — to identify you to your friends</li>
+          <li>Username — your unique handle within the app</li>
+          <li>Profile photo (optional) — stored in Firebase Storage; visible to all users of the app</li>
+          <li>Exact home address (street address, city, state, ZIP, and precise latitude/longitude) — revealed to approved guests only during an active stay window</li>
+          <li>Approximate home location (~city level) — shown on the map to accepted friends</li>
+          <li>Chat messages (text content, timestamp, sender) — for in-app messaging</li>
+          <li>Friendship graph (who you're friends with) — for core functionality</li>
+          <li>Crash request data (dates, number of guests, status) — for core functionality</li>
+          <li>iOS Calendar events (read/write via EventKit) — to add crash stay dates to your calendar when you choose to</li>
+          <li>Device push notification token (FCM token) — used solely to deliver in-app notifications; never shared with third parties or used for advertising</li>
+        </ul>
+        <p class="privacy-note">We do not collect analytics, advertising IDs, browsing behavior, or any tracking data. We have no analytics SDK, crash-reporting SDK, or advertising SDK.</p>
+
+        <h3>3. How Your Address Is Shared</h3>
+        <p>Your exact home address is never public and never shown on the map or in search results.</p>
+        <p>It is revealed only when ALL of the following are true:</p>
+        <ul>
+          <li>You have explicitly approved a crash request from a specific person</li>
+          <li>The current date falls within the approved arrival-to-departure window</li>
+        </ul>
+        <p>After the departure date passes, the address is automatically hidden. The reveal expires — no action required from you.</p>
+
+        <h3>4. Third-Party Services</h3>
+        <p>Crash uses the following third-party services:</p>
+        <ul>
+          <li><strong>Firebase Authentication (Google LLC)</strong> — stores your email address and authentication tokens. Google's servers are located in the United States.</li>
+          <li><strong>Cloud Firestore (Google LLC)</strong> — stores all app data listed in Section 2. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Policy</a>.</li>
+          <li><strong>Firebase Storage (Google LLC)</strong> — stores profile photos. Photos are accessible to any authenticated user of the app.</li>
+          <li><strong>Firebase Cloud Messaging (Google LLC)</strong> — delivers push notifications using your FCM token. The token is stored in Firestore and is only used to send notifications.</li>
+          <li><strong>Apple Maps / MapKit</strong> — used to display the in-app map. No user data is transmitted to Apple by Crash for this purpose; MapKit operates client-side.</li>
+          <li><strong>Apple EventKit</strong> — accesses your iOS calendar only when you choose to add a crash stay. No calendar data is stored on Crash's servers.</li>
+          <li><strong>Apple LocalAuthentication</strong> — if you enable Face ID / Touch ID sign-in, authentication is handled entirely by iOS on your device. Crash never receives your biometric data; credentials are stored in the iOS Keychain on-device only.</li>
+        </ul>
+
+        <h3>5. Data Retention</h3>
+        <p>Your data is retained as long as your account exists.</p>
+        <p>When you delete your account (Settings → Delete Account and Data), the following are permanently and immediately deleted:</p>
+        <ul>
+          <li>Your private profile (address, coordinates)</li>
+          <li>Your public profile (name, username)</li>
+          <li>Your profile photo (if uploaded)</li>
+          <li>Your push notification token</li>
+          <li>Your friend list and all pending friend requests</li>
+          <li>Your crash requests</li>
+          <li>Your chat thread references and messages</li>
+        </ul>
+
+        <h3>6. Your Rights</h3>
+        <p><strong>Right to deletion:</strong> Use Settings → Delete Account and Data in the app. This is immediate and permanent.</p>
+        <p><strong>Right to access:</strong> Contact us at <a href="mailto:crash.livesimple@gmail.com">crash.livesimple@gmail.com</a> to request a copy of your data.</p>
+        <p><strong>EU / EEA users (GDPR):</strong> You have additional rights to rectification, restriction of processing, and data portability. Contact us at <a href="mailto:crash.livesimple@gmail.com">crash.livesimple@gmail.com</a> to exercise these rights.</p>
+        <p><strong>California users (CCPA):</strong> You have the right to know what personal information we collect (described in Section 2) and the right to delete it (described above). We do not sell your personal information to any third party.</p>
+
+        <h3>7. Age Requirement</h3>
+        <p>Crash is intended for users who are 13 years of age or older. We do not knowingly collect personal information from anyone under 13. If you believe a minor has created an account, please contact us at <a href="mailto:crash.livesimple@gmail.com">crash.livesimple@gmail.com</a> and we will delete the account.</p>
+
+        <h3>8. Security</h3>
+        <p>Your data is stored in Google Cloud Firestore and Firebase Storage, both protected by security rules. Users can only read their own private profile. Exact home addresses are only readable by the parties to an approved crash stay, and only within the approved time window. Profile photos are readable by any authenticated user of the app.</p>
+
+        <h3>9. Changes to This Policy</h3>
+        <p>We may update this Privacy Policy from time to time. The date at the top of this page indicates when it was last revised. Continued use of the app after any changes constitutes your acceptance of the updated policy.</p>
+
+        <h3>10. Contact</h3>
+        <p>If you have questions or concerns about this Privacy Policy, contact us at:<br>
+        <a href="mailto:crash.livesimple@gmail.com">crash.livesimple@gmail.com</a></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <footer class="site-footer">
+    <p class="powered-by">
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+      <span class="float-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fas fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+    </p>
+  </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="/js/academic.min.eeb855c70a08cf40f8f8d58c82fa7d5e.js"></script>
+
+</body>
+</html>

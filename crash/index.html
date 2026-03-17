@@ -34,10 +34,11 @@
       padding: 4rem 1rem 2rem;
     }
     .crash-hero img {
+      display: block;
+      margin: 0 auto 1.5rem;
       width: 100px;
       height: 100px;
       border-radius: 22%;
-      margin-bottom: 1.5rem;
       box-shadow: 0 4px 20px rgba(0,0,0,0.15);
     }
     .crash-hero h1 {
@@ -121,7 +122,7 @@
           <a class="nav-link" href="/#experience"><span>Experience</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="/crash/"><span>Crash</span></a>
+          <a class="nav-link active" href="/crash/"><span>My App</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/files/cv.pdf" target="_blank"><span>CV</span></a>
@@ -205,14 +206,6 @@
           </div>
 
           <div class="feature-row">
-            <div class="feature-icon">🔔</div>
-            <div class="feature-text">
-              <strong>Smart Notifications</strong>
-              Get notified for crash requests, approvals, cancellations, friend requests, and new messages.
-            </div>
-          </div>
-
-          <div class="feature-row">
             <div class="feature-icon">📅</div>
             <div class="feature-text">
               <strong>Calendar Integration</strong>
@@ -223,85 +216,29 @@
       </div>
     </div>
 
-    <!-- Privacy Policy -->
-    <div class="privacy-section">
+    <!-- Support / Venmo -->
+    <div style="border-top: 1px solid #e0e0e0; padding: 3rem 0 2rem;">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8">
-          <h2 id="privacy">Privacy Policy</h2>
-          <p class="last-updated">Last updated: March 17, 2025</p>
+          <h2 style="margin-bottom: 1rem;">Support Crash</h2>
+          <p style="color: #555;">
+            Apple charges developers $99/year to keep an app on the App Store. To avoid making Crash paid,
+            subscription-based, or full of ads, I rely entirely on donations to keep it available.
+            If you find it useful, any contribution helps.
+          </p>
+          <a href="https://venmo.com/joshuashinkle" target="_blank" rel="noopener"
+             class="btn btn-outline-primary my-1">
+            Donate on Venmo
+          </a>
+        </div>
+      </div>
+    </div>
 
-          <h3>1. Who We Are</h3>
-          <p>Crash is an iOS app developed by Joshua Shinkle (<a href="mailto:crash.livesimple@gmail.com">crash.livesimple@gmail.com</a>). It is a personal, non-commercial project. By using Crash, you agree to this Privacy Policy.</p>
-
-          <h3>2. What Data We Collect and Why</h3>
-          <p>We collect only what is necessary to provide the app's core functionality:</p>
-          <ul>
-            <li>Email address — for account creation, authentication, and password reset</li>
-            <li>First and last name — to identify you to your friends</li>
-            <li>Username — your unique handle within the app</li>
-            <li>Profile photo (optional) — stored in Firebase Storage; visible to all users of the app</li>
-            <li>Exact home address (street address, city, state, ZIP, and precise latitude/longitude) — revealed to approved guests only during an active stay window</li>
-            <li>Approximate home location (~city level) — shown on the map to accepted friends</li>
-            <li>Chat messages (text content, timestamp, sender) — for in-app messaging</li>
-            <li>Friendship graph (who you're friends with) — for core functionality</li>
-            <li>Crash request data (dates, number of guests, status) — for core functionality</li>
-            <li>iOS Calendar events (read/write via EventKit) — to add crash stay dates to your calendar when you choose to</li>
-            <li>Device push notification token (FCM token) — used solely to deliver in-app notifications; never shared with third parties or used for advertising</li>
-          </ul>
-          <p class="privacy-note">We do not collect analytics, advertising IDs, browsing behavior, or any tracking data. We have no analytics SDK, crash-reporting SDK, or advertising SDK.</p>
-
-          <h3>3. How Your Address Is Shared</h3>
-          <p>Your exact home address is never public and never shown on the map or in search results.</p>
-          <p>It is revealed only when ALL of the following are true:</p>
-          <ul>
-            <li>You have explicitly approved a crash request from a specific person</li>
-            <li>The current date falls within the approved arrival-to-departure window</li>
-          </ul>
-          <p>After the departure date passes, the address is automatically hidden. The reveal expires — no action required from you.</p>
-
-          <h3>4. Third-Party Services</h3>
-          <p>Crash uses the following third-party services:</p>
-          <ul>
-            <li><strong>Firebase Authentication (Google LLC)</strong> — stores your email address and authentication tokens. Google's servers are located in the United States.</li>
-            <li><strong>Cloud Firestore (Google LLC)</strong> — stores all app data listed in Section 2. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Policy</a>.</li>
-            <li><strong>Firebase Storage (Google LLC)</strong> — stores profile photos. Photos are accessible to any authenticated user of the app.</li>
-            <li><strong>Firebase Cloud Messaging (Google LLC)</strong> — delivers push notifications using your FCM token. The token is stored in Firestore and is only used to send notifications.</li>
-            <li><strong>Apple Maps / MapKit</strong> — used to display the in-app map. No user data is transmitted to Apple by Crash for this purpose; MapKit operates client-side.</li>
-            <li><strong>Apple EventKit</strong> — accesses your iOS calendar only when you choose to add a crash stay. No calendar data is stored on Crash's servers.</li>
-            <li><strong>Apple LocalAuthentication</strong> — if you enable Face ID / Touch ID sign-in, authentication is handled entirely by iOS on your device. Crash never receives your biometric data; credentials are stored in the iOS Keychain on-device only.</li>
-          </ul>
-
-          <h3>5. Data Retention</h3>
-          <p>Your data is retained as long as your account exists.</p>
-          <p>When you delete your account (Settings → Delete Account and Data), the following are permanently and immediately deleted:</p>
-          <ul>
-            <li>Your private profile (address, coordinates)</li>
-            <li>Your public profile (name, username)</li>
-            <li>Your profile photo (if uploaded)</li>
-            <li>Your push notification token</li>
-            <li>Your friend list and all pending friend requests</li>
-            <li>Your crash requests</li>
-            <li>Your chat thread references and messages</li>
-          </ul>
-
-          <h3>6. Your Rights</h3>
-          <p><strong>Right to deletion:</strong> Use Settings → Delete Account and Data in the app. This is immediate and permanent.</p>
-          <p><strong>Right to access:</strong> Contact us at <a href="mailto:crash.livesimple@gmail.com">crash.livesimple@gmail.com</a> to request a copy of your data.</p>
-          <p><strong>EU / EEA users (GDPR):</strong> You have additional rights to rectification, restriction of processing, and data portability. Contact us at <a href="mailto:crash.livesimple@gmail.com">crash.livesimple@gmail.com</a> to exercise these rights.</p>
-          <p><strong>California users (CCPA):</strong> You have the right to know what personal information we collect (described in Section 2) and the right to delete it (described above). We do not sell your personal information to any third party.</p>
-
-          <h3>7. Age Requirement</h3>
-          <p>Crash is intended for users who are 13 years of age or older. We do not knowingly collect personal information from anyone under 13. If you believe a minor has created an account, please contact us at <a href="mailto:crash.livesimple@gmail.com">crash.livesimple@gmail.com</a> and we will delete the account.</p>
-
-          <h3>8. Security</h3>
-          <p>Your data is stored in Google Cloud Firestore and Firebase Storage, both protected by security rules. Users can only read their own private profile. Exact home addresses are only readable by the parties to an approved crash stay, and only within the approved time window. Profile photos are readable by any authenticated user of the app.</p>
-
-          <h3>9. Changes to This Policy</h3>
-          <p>We may update this Privacy Policy from time to time. The date at the top of this page indicates when it was last revised. Continued use of the app after any changes constitutes your acceptance of the updated policy.</p>
-
-          <h3>10. Contact</h3>
-          <p>If you have questions or concerns about this Privacy Policy, contact us at:<br>
-          <a href="mailto:crash.livesimple@gmail.com">crash.livesimple@gmail.com</a></p>
+    <!-- Privacy Policy link -->
+    <div style="border-top: 1px solid #e0e0e0; padding: 2rem 0;">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+          <a href="/crash/privacy/">Privacy Policy</a>
         </div>
       </div>
     </div>
@@ -309,7 +246,7 @@
   </div>
 </div>
 
-<div class="container" style="margin-top: 2rem;">
+<div class="container" style="margin-top: 1rem;">
   <footer class="site-footer">
     <p class="powered-by">
       Powered by the
