@@ -119,7 +119,6 @@
           <li>Friendship graph (who you're friends with) — for core functionality</li>
           <li>Crash request data (dates, number of guests, status) — for core functionality</li>
           <li>iOS Calendar events (read/write via EventKit) — to add crash stay dates to your calendar when you choose to</li>
-          <li>Device push notification token (FCM token) — used solely to deliver in-app notifications; never shared with third parties or used for advertising</li>
         </ul>
         <p class="privacy-note">We do not collect analytics, advertising IDs, browsing behavior, or any tracking data. We have no analytics SDK, crash-reporting SDK, or advertising SDK.</p>
 
@@ -138,7 +137,6 @@
           <li><strong>Firebase Authentication (Google LLC)</strong> — stores your email address and authentication tokens. Google's servers are located in the United States.</li>
           <li><strong>Cloud Firestore (Google LLC)</strong> — stores all app data listed in Section 2. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Policy</a>.</li>
           <li><strong>Firebase Storage (Google LLC)</strong> — stores profile photos. Photos are accessible to any authenticated user of the app.</li>
-          <li><strong>Firebase Cloud Messaging (Google LLC)</strong> — delivers push notifications using your FCM token. The token is stored in Firestore and is only used to send notifications.</li>
           <li><strong>Apple Maps / MapKit</strong> — used to display the in-app map. No user data is transmitted to Apple by Crash for this purpose; MapKit operates client-side.</li>
           <li><strong>Apple EventKit</strong> — accesses your iOS calendar only when you choose to add a crash stay. No calendar data is stored on Crash's servers.</li>
           <li><strong>Apple LocalAuthentication</strong> — if you enable Face ID / Touch ID sign-in, authentication is handled entirely by iOS on your device. Crash never receives your biometric data; credentials are stored in the iOS Keychain on-device only.</li>
@@ -151,7 +149,6 @@
           <li>Your private profile (address, coordinates)</li>
           <li>Your public profile (name, username)</li>
           <li>Your profile photo (if uploaded)</li>
-          <li>Your push notification token</li>
           <li>Your friend list and all pending friend requests</li>
           <li>Your crash requests</li>
           <li>Your chat thread references and messages</li>
