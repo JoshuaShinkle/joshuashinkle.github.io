@@ -144,6 +144,7 @@
             <li><strong>First and last name</strong> — to identify you to your friends</li>
             <li><strong>Username</strong> — your unique handle within the app</li>
             <li><strong>Profile photo</strong> (optional) — stored in Firebase Storage; visible to all users of the app</li>
+            <li><strong>Phone number</strong> (optional) — stored privately in your profile; used only to help your contacts discover you on Crash. Never visible to other users.</li>
           </ul>
         </div>
 
@@ -168,6 +169,7 @@
           <div class="data-group-label">Device &amp; System</div>
           <ul>
             <li><strong>iOS Calendar events</strong> (read/write via EventKit) — only when you choose to add a stay to your calendar</li>
+            <li><strong>iOS Contacts</strong> (read-only, via Apple Contacts framework) — only when you tap "Find Friends from Contacts". Phone numbers from your contacts are normalized and checked against a private server-side index to find registered users. Your contacts list is never stored on Crash's servers.</li>
           </ul>
         </div>
 
@@ -215,15 +217,17 @@
           <li><strong>Apple Maps / MapKit</strong> — used to display the in-app map. No user data is transmitted to Apple by Crash for this purpose; MapKit operates client-side.</li>
           <li><strong>Apple EventKit</strong> — accesses your iOS calendar only when you choose to add a crash stay. No calendar data is stored on Crash's servers.</li>
           <li><strong>Apple LocalAuthentication</strong> — if you enable Face ID / Touch ID sign-in, authentication is handled entirely by iOS on your device. Crash never receives your biometric data; credentials are stored in the iOS Keychain on-device only.</li>
+          <li><strong>Apple Contacts</strong> — accessed read-only only when you use "Find Friends from Contacts". Your full contact list is not stored on Crash's servers; only normalized phone numbers are transmitted to Firestore for the purpose of matching registered users.</li>
         </ul>
 
         <h3>5. Data Retention</h3>
         <p>Your data is retained as long as your account exists.</p>
         <p>When you delete your account (Settings → Delete Account and Data), the following are permanently and immediately deleted:</p>
         <ul>
-          <li>Your private profile (address, coordinates)</li>
+          <li>Your private profile (address, coordinates, phone number)</li>
           <li>Your public profile (name, username)</li>
           <li>Your profile photo (if uploaded)</li>
+          <li>Your contacts discovery index entry (if a phone number was provided)</li>
           <li>Your friend list and all pending friend requests</li>
           <li>Your crash requests</li>
           <li>Your chat thread references and messages</li>
